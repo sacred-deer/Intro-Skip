@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro Skip</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <path
+              fill="currentColor"
+              d="M7 5.5v13l10.5-6.5L7 5.5zm9.2 4.1 2.3-1.4v8.6l-2.3-1.4V9.6z"
+            />
+          </svg>
+        </div>
+        <div>
+          <h1>Intro Skip</h1>
+          <p class="subtitle">Netflix · Prime Video · Disney+ · Crave</p>
+        </div>
+      </header>
+
+      <label class="toggle-row" for="enabled-toggle">
+        <span class="toggle-copy">
+          <strong id="status-label">Enabled</strong>
+          <span id="status-hint">Intros skip automatically</span>
+        </span>
+        <input id="enabled-toggle" type="checkbox" checked />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

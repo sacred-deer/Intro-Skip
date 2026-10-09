@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Intro Skip",
+  "version": "1.1.0",
+  "description": "Automatically clicks Skip Intro on Netflix, Prime Video, Disney+ and Crave. Toggle on or off from the toolbar.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Intro Skip",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.netflix.com/*",
+        "*://*.disneyplus.com/*",
+        "*://*.crave.ca/*",
+        "*://*.primevideo.com/*",
+        "*://*.amazon.com/gp/video/*",
+        "*://*.amazon.com/dp/*",
+        "*://*.amazon.com/*/dp/*",
+        "*://*.amazon.ca/gp/video/*",
+        "*://*.amazon.ca/dp/*",
+        "*://*.amazon.ca/*/dp/*",
+        "*://*.amazon.co.uk/gp/video/*",
+        "*://*.amazon.co.uk/dp/*",
+        "*://*.amazon.co.uk/*/dp/*",
+        "*://*.amazon.de/gp/video/*",
+        "*://*.amazon.de/dp/*",
+        "*://*.amazon.de/*/dp/*",
+        "*://*.amazon.in/gp/video/*",
+        "*://*.amazon.in/dp/*",
+        "*://*.amazon.in/*/dp/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
