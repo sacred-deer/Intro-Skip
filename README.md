@@ -44,7 +44,7 @@ Open **Terminal** and run:
 
 ```bash
 cd ~/Documents
-git clone https://github.com/YOUR-GITHUB-USERNAME/Intro-Skip.git
+git clone https://github.com/sacred-deer/Intro-Skip.git
 ```
 
 On a Mac without developer tools, the first `git` command asks to install the **Command Line Tools**. Click **Install**, wait for it to finish, then run the command again.
